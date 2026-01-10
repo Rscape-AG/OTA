@@ -1,0 +1,30 @@
+{
+  "response": [
+    {
+      "maintainer": "Reinascape",
+      "currently_maintained": true,
+      "oem": "OnePlus",
+      "device": "Ace 3V",
+      "filename": "EvolutionX-16.0-20260110-audi-11.5.2-Unofficial.zip",
+      "download": "https://get.nyande.su/audi/16/EvolutionX-16.0-20260110-audi-11.5.2-Unofficial.zip",
+      "timestamp": 1768068064,
+      "md5": "6af908fef2c4ed44f795af6c36cedcf1",
+      "sha256": "6b096867eaafd0aeef53e0f2fda87f72c27bde3ffa2a52ea4302a5be2f70f602",
+      "size": 4184908570,
+      "version": "11.5.2",
+      "buildtype": "userdebug",
+      "forum": "https://reinadump.t.me",
+      "firmware": "",
+      "paypal": "https://reinascape.t.me",
+      "github": "Rscape-AG",
+      "initial_installation_images": [
+        "boot",
+        "dtbo",
+        "init_boot",
+        "vbmeta",
+        "vendor_boot"
+        ],
+      "extra_images": []
+    }
+  ]
+}

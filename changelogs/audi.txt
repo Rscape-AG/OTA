@@ -1,0 +1,30 @@
+This is Android 16 QPR1 with January 2026 security patches
+
+Notes:
+==============================
+- Includes Dolby Atmos, KernelSU and SuSFS.
+- Credits to all sm8650 community.
+- Use EvolutionX recovery that provides with ROM, use OFOX/TWRP at your own risk.
+- Always dirty flash at your own risk. If your device bootloops, revert to an older build that boots.
+
+Device changes:
+==============================
+Kernel update to 6.1.159
+Fixed Alert Slider interface position
+Added support DeviceAsWebcam feature
+Added SystemUI restart option
+Other fixes and improvements
+
+Notable ROM changes:
+==============================
+Add Fix Bluetooth status display issue after power cycle
+Fixes an issue where the lockscreen clock would display the incorrect time after a SystemUI restart or hot reload
+Remove Duplicate WIFI_DISPLAY permission entry
+Settings: Implement localepicker from SettingsGoogle
+SettingsLib: Don't show system overlays on apps list
+SystemUI: Align Smartspace DataProviders with updated BcSmartspaceDataPlugin API
+SystemUI: re enable KeyguardSliceProvider
+device_config: Update smartspace flags to QPR1
+extras: Set preference-ktx minSdkVersion to 23
+gms: Bring back DeviceIntelligenceNetworkPrebuilt
+version: Downrev to 11.5.2
