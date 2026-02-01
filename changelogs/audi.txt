@@ -1,36 +1,39 @@
 This is Android 16 QPR2 with January 2026 security patches
 
-CAUTION!!! DIRTY FLASH FROM QPR1 IMPOSSIBLE
-MAKE A BACKUP NOW IF YOU WANT TO MOVE TO THIS BUILD
-
 Notes:
 ==============================
-- Includes Dolby Atmos, KernelSU and SuSFS.
-- Credits to all sm8650 community.
+- Includes Dolby Atmos, SukiSU and SuSFS.
+- Thanks to all sm8650 community.
 - Use EvolutionX recovery that provides with ROM, use OFOX/TWRP at your own risk.
 - Always dirty flash at your own risk. If your device bootloops, revert to an older build that boots.
 
 Device changes:
 ==============================
+Fixed Bluetooth audio callings;
+Removed old BT LE stuff, some other BT fixes;
 Updated EvolutionX sources to latest revision;
-Various CPU scheduling optimizations;
-Fixed KernelSU and SuSFS;
-Fixed UDFPS on avalon;
-Some kernel tweaks and optimizations;
+Audi blobs from COS 16.0.3.500;
+Switched to Xiaomi Dolby;
+Switched to SukiSU;
 Other fixes and improvements
 
 Notable ROM changes:
 ==============================
-ApplicationPackageManager: Drop tensor spoof prop
-BLASTBufferQueue: Add epoll_pwait2 fallback for older kernels
-Evolver: Bring back kill app through notification guts and compact heads up notifs
-Evolver: Drop tensor spoof
-Evolver: Implement Play Store spoofing
-Evolver: Kill only relevant processes on spoofing settings change
-Evolver: Show SystemUI restart dialog for required preferences
-LineageSettings: Allow disabling window blurs by default
-MediaCodec: Use proper surface when creating PersistentSurface
-Systemui: force black shade for black theme
-aconfig: Fix notification_background_tint_optimization filename
-audio: force IN_COMMUNICATION when routing calls to BT SCO
-fixup! Settings: doze brightness customization
+PixelPropsUtils: Enable tensor features for new Pixel prebuilts
+Settings: Adapt Google battery saver changes to A16 QPR2
+SystemUI: Apply tile shape customization to Ringer Slider
+SystemUI: update ringer tile background color
+fixup! SystemUI: VolumeDialog: Fix layout issues with left gravity
+LMOFreeform: Refactor touch scaling to use MotionEvent transform
+Settings: Do not rely on androidx.preference_preference-ktx
+Settings: Remove flag check for blur toggle
+bpfloader: Allow overriding kernel version
+bionic: Fix align usage for fast lookup hosts file data
+bionic: Sort and cache hosts file data for fast lookup
+bionic: Support wildcards in cached hosts file
+extras: Remove preference_preference-ktx library prebuilt
+getaddrinfo: Use Cloudflare DNS instead of Google DNS
+iconloaderlib: Update themed icons color palette
+nativedisplay: fix the flicker issue in streaming video
+netbpfload: Relax kernel version requirement
+sidebar: Update sidebar default customization values
